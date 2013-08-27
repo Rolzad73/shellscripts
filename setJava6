@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# set java 6
+JAVA_HOME=/usr/local/java/jdk1.6.0_45
+PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
+JRE_HOME=/usr/local/java/jre1.6.0_45
+PATH=$PATH:$HOME/bin:$JRE_HOME/bin
+
+# may also have to do this
+sudo update-alternatives --set java /usr/local/java/jre1.6.0_45/bin/java
+sudo update-alternatives --set javac /usr/local/java/jdk1.6.0_45/bin/javac
+sudo update-alternatives --set javaws /usr/local/java/jre1.6.0_45/bin/javaws
