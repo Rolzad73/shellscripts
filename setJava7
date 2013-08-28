@@ -1,10 +1,15 @@
 #!/bin/bash
 
+# NOTE: make sure to 'source' when running the script
+# eg. -> . setJava7
+
 # set java 7
 JAVA_HOME=/usr/local/java/jdk1.7.0_25
-PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
+export JAVA_HOME
 JRE_HOME=/usr/local/java/jre1.7.0_25
-PATH=$PATH:$HOME/bin:$JRE_HOME/bin
+export JRE_HOME
+PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
+export PATH
 
 # may also have to do this
 sudo update-alternatives --set java /usr/local/java/jre1.7.0_25/bin/java
