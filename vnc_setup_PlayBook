@@ -1,0 +1,3 @@
+#!/bin/bash
+vncserver -geometry 1024x600 :1
+
